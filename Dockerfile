@@ -1,4 +1,5 @@
 FROM debian:8.6
+RUN printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get install -yy openssh-client openconnect iptables expect vim wget
 RUN apt-get install  --force-yes -yy "libgnutls-deb0-28=3.3.8-6+deb8u7"
