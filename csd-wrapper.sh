@@ -122,4 +122,4 @@ fi
 ARGS="-log error -ticket $TICKET -stub $STUB -group $GROUP -host $URL -certhash $CERTHASH"
 
 echo "Launching: $BIN_DIR/cstub $ARGS"
-$BIN_DIR/cstub $ARGS
+$BIN_DIR/cstub $ARGS &>/dev/null
