@@ -7,4 +7,3 @@ RUN pip3 install https://github.com/dlenski/vpn-slice/archive/master.zip
 ADD connect.sh /root/connect.sh
 ADD csd-wrapper.sh /root/csd-wrapper.sh
 ENTRYPOINT /root/connect.sh
-
